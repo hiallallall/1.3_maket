@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sponsorship.css">
+    <title>Спонсоры</title>
+</head>
+<body>
+    <main>
+        <h1>Ремонт техники различных брендов</h1>
+        <div class="all-sponsors" id="div-hidden">
+        <div class="sponsor"> <img class="logo" src="Lenovo.svg" alt="Lenovo"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="samsung.svg" alt="samsung"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="apple.svg" alt="apple"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="bosch.svg" alt="bosch"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="hp.svg" alt="hp"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="acer.svg" alt="acer"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="Viewsonic.svg" alt="Viewsonic"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo sony" src="sony.svg" alt="sony"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="samsung.svg" alt="samsung"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor"> <img class="logo" src="apple.svg" alt="apple"> <img class="go-point" src="go.svg" alt="go-point"></div>
+        <div class="sponsor" ><img class="logo" src="Lenovo.svg" alt="Lenovo"> <img class="go-point" src="go.svg" alt="go-point">  </div>
+        </div>
+        <div class="show_all-div">
+        <img class="pointer_down" src="pointer_down.svg" alt="" id="pointer_down"><input class="show_all" onclick="hide();change();" type="button" value="Показать все" id="myButton1"></input></div>
+        <script>
+            function change() {
+                var pointer = document.getElementById("pointer_down");
+                var elem = document.getElementById("myButton1");
+                if (elem.value=="Показать все") {
+                    pointer.style.transform = "rotate(180deg)";
+                     elem.value = "Скрыть";
+                } else {
+                    pointer.style.transform = "rotate(0deg)";
+                    elem.value = "Показать все";
+                }
+
+            };
+            function hide() {
+                
+                var x = document.getElementById("div-hidden");
+                if (x.style.overflowY === "visible") {
+                    x.style.maxHeight = "171px";
+                    x.style.gridAutoRows = "0";
+                    x.style.overflowY = "hidden";
+                } else {
+                    
+                    x.style.overflowY = "visible";
+                    x.style.maxHeight = "none";
+                    x.style.gridAutoRows = "auto";
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>
