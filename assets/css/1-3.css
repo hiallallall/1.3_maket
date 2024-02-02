@@ -139,6 +139,8 @@ h1
     gap: 20px;
     padding-left: 32px;
     flex-wrap: wrap;
+    list-style: none;
+    
 }
 
 .navigation_opacity{
@@ -146,19 +148,20 @@ h1
     height: 40px;
     width: 24px;
     right: 0;
-    top: 177px;
+    top: 198px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
-.navigation span {
+.navigation li {
     padding: 8px;
     padding-left: 16.54px;
     padding-right: 9.3px;
-}
-
-.navigation span:hover{
     border: solid;
     border-radius: 6px;
+    border-color:transparent;
+}
+
+.navigation li:hover{
     border-color: #B8FFEC;
     background: #ffffff;
 }
