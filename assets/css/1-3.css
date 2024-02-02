@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('TTLakes-Regular.eot');
-    src: local('TT Lakes Regular'), local('C:\Users\yahul\Documents\GitHub\Maket\assets\FontsTTLakes-Regular'),
+    src: url('../Fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('../Fonts/TTLakes-Regular'),
         url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
         url('TTLakes-Regular.woff') format('woff'),
         url('TTLakes-Regular.ttf') format('truetype');
@@ -10,8 +10,8 @@
 }
 @font-face {
     font-family: 'TT Lakes';
-    src: url('TTLakes-Medium.eot');
-    src: local('TT Lakes Medium'), local('C:\Users\yahul\Documents\GitHub\Maket\assets\FontsTTLakes-Medium'),
+    src: url('../Fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('../Fonts/TTLakes-Medium'),
         url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
         url('TTLakes-Medium.woff') format('woff'),
         url('TTLakes-Medium.ttf') format('truetype');
@@ -20,8 +20,8 @@
 }
 @font-face {
     font-family: 'TT Lakes';
-    src: url('TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('C:\Users\yahul\Documents\GitHub\Maket\assets\FontsTTLakes-Bold'),
+    src: url('../Fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('../Fonts/TTLakes-Bold'),
         url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
         url('TTLakes-Bold.woff') format('woff'),
         url('TTLakes-Bold.ttf') format('truetype');
@@ -123,6 +123,11 @@ h1
 .highlight {
     position: absolute;
     left: 0%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }
 
 .navigation  {
