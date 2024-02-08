@@ -189,7 +189,11 @@ button {
     letter-spacing: -0.20000000298023224px;
     text-align: left;
     display:flex;
-    gap:16px;
+    align-items: center;
+    font-family: 'TT Lakes', sans-serif;
+    font-weight: 500;
+    gap:8px;
+    margin-left:32px;
 }
 .information{
 font-size: 14px;
@@ -201,6 +205,7 @@ height: 160px;
 width: 490px;
 left: 35px;
 top: 188.22021484375px;
+overflow:hidden;
 }
 .information p{
     width: 490px; 
@@ -252,10 +257,11 @@ h2{
         flex-wrap:nowrap;
         }
     .information{
-        display: none;
+        display: block;
+        height: 110px;
     }
-    .information-mobile{
-        display:inline;
+    .information p {
+        width:288px
     }
     h1{
         padding-left:16px;
@@ -295,6 +301,10 @@ h2{
     .checkstatus{
         margin-left: auto;
     }
+    .read-next {
+        margin-bottom: 16px;
+        margin-left:16px;
+    }
 }
 
 @media (min-device-width: 768px)
@@ -304,30 +314,33 @@ h2{
     }
 
     .img_divider{
-    
+        min-width: 790px;
         display: flex;
         justify-content: center;
+        padding-bottom:15px;
     }
-
+    .windows {
+        width: 790px;
+    }
     .navigation{
          flex-wrap:nowrap;
     }
-    .information-laptop{
-        display:inline;
-    }
     .information{
-        display:none;
+        display:block;
+        height: 185px;
+        width: 312px;
+        padding-left:24px;
     }
     h1{
         padding-left:24px;
     }
-    p{
+    .information p{
         padding-right: 0px;
-        padding-left: 24px;
+        padding-left: 0;
         margin-top:33px;
         margin-bottom:0px;
         width: 312px;
-        height: 160px;
+        height: 80px;
     }
     h2{
         margin-left:33px;
@@ -362,14 +375,15 @@ h2{
         margin-left:16px;
     }
     .work-time__img {
-    height: 259.65533447265625px;
+    height: auto;
     width: 360px;
     border-radius: 5px;
     margin-top:10px;  
-    margin-right: 25px;
+    margin-right: 35px;
     margin-left:auto;
     }
-    section{
-        height: 300px;
+    .read-next {
+        margin-bottom: 16px;
+        margin: left 25px;
     }
 }
