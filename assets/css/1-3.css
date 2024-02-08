@@ -33,13 +33,38 @@ body {
     font-family: 'TT Lakes', sans-serif;
     margin: 0;
 }
-
+.menu::after {
+    width: 2px;
+    content: '';
+    background-image: url(../img/devider.svg);
+    height: 32px;
+    display: ruby-text;
+    top: 30px;
+    left: 84px;
+    position: absolute;
+}
 .h1__head{
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.header-page_repair {
+    @media (min-device-width: 768px)
+    and (max-device-width: 1119px) {
+        margin-left:42px;
+    }
+    
+}
+.header-page_repair::before {
+    content:'';
+    width:2px;
+    height: 32px;
+    background-image: url(../img/devider.svg);
+    display: ruby-text;
+    position:absolute;
+    top: 31px;
+    left: 626px;
+}
 .h1__head--burgers p {
     display: flex;
     align-items: center;
@@ -284,7 +309,7 @@ h2{
         padding-left: 0;
         padding-right: 0;
     }
-    .devider-1,
+    .menu::after,
     .call,
     .chat,
     .profile{
@@ -355,10 +380,6 @@ h2{
     .header-page{
             margin-left:24px;
             margin-right:24px;
-        }
-    .devider-1{
-            margin-left:20px;
-            margin-right:20.73px;
         }
     .devider-2{
             margin-left:20px;
